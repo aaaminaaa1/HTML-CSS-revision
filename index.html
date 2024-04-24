@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>My Newest Site!</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="background: linear-gradient(to bottom,pink, palevioletred); background-attachment: fixed;">
+        <h1 id="heading">Welcome everyone!</h1>
+        <p class="paragraph">This is the first site I have built ever since finishing <span>high school</span>, 
+            therefore I have not used <b>html, css or javascript </b>.. Bare with me! :D </p>
+        <img align= "center"; src="slika1.jpg" alt="Slika potoka kroz sumu" id="slika"> <br>
+        <a href="https://www.uninp.edu.rs" target="_blank" title="This takes you to official site">Internacionalni Univerzitet u Novom Pazaru</a> <br>
+        <a href="page2.html" target="_self">Go to page 2</a> <br>
+        <a href="mailto:fake123@gmail.com">Email me</a> <br>
+        <audio controls src="nasheed.mp3"></audio>
+        <h3 class="paragraph" style="text-align: left;">Unordered list</h3>
+        <ul>
+            <li>pizza dough</li>
+            <li>tomato sauce</li>
+            <li>cheese</li>
+            <li>topppings</li>
+        </ul>
+        <h3 class="paragraph" style="text-align: left;">Ordered list</h3>
+        <ol>
+            <li>Monday</li>
+            <li>Tuesday</li>
+            <li>Wednesday</li>
+        </ol>
+        <dl style="color: white; font-family: 'Courier New', Courier, monospaces;">
+            <dt>HTML</dt>
+            <dd>This adds structure to webpage</dd>
+        </dl>
+        <div>
+        <table style="background-color: black;">
+            <tr style="color: palevioletred; background: white;">
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+            <tr style="color: white; background: palevioletred;">
+                <th>9-5</th>
+                <th>9-5</th>
+                <th>9-5</th>
+                <th>9-5</th>
+                <th>9-5</th>
+                <th>closed</th>
+                <th>closed</th>
+            </tr>
+        </div>
+        </table>
+        <br>
+
+        <form action="page2.html" method="POST">
+            <div>
+                <label for="fname"> First Name</label>
+                <input type="text" name="fname" id="fname" placeholder="Spongebob" required>
+            </div>
+            <br>
+            <div>
+                <label for="lname"> Last Name</label>
+                <input type="text" name="lname" id="lname" placeholder="Squarepants" required>
+            </div>
+            <br>
+            <div>
+                <label for="pass"> Password</label>
+                <input type="password" name="pass" id="pass" maxlength="12" required>
+            </div>
+            <br>
+            <div>
+                <label for="mail"> Email</label>
+                <input type="email" name="mail" id="mail" placeholder="sponge@gmail.com" required>
+            </div>
+            <br>
+            <div>
+                <label for="phone"> Phone number</label>
+                <input type="tel" name="phone" id="phone" placeholder="000-000-000" required>
+            </div>
+            <br>
+            <div>
+                <label for="date"> Birth date</label>
+                <input type="date" name="date" id="date" placeholder="03.03.2004" required>
+            </div>
+            <br>
+            <div>
+                <label for="quantity">Quantity</label>
+                <input type="number" name="quantity" id="quantity" min="0" max="99" value="1" required>
+            </div>
+            <label for="payment">Payment: </label>
+            <select name="payment" id="payment">
+                <option value="vise">visa</option>
+                <option value="mscard">mastercard</option>
+                <option value="giftcard">giftcard</option>
+            </select>
+            
+            <div id="radio">
+            <label for="title">Title: </label>
+
+            <label for="mr">Mr.</label>
+            <input type="radio" name="title" id="mr" value="Mr.">
+
+            <label for="mrs">Mrs.</label>
+            <input type="radio" name="title" id="mrs" value="Mrs.">
+
+            <label for="phd">PhD.</label>
+            <input type="radio" name="title" id="phd" value="PhD.">
+        </div>
+        <div>
+                <input type="reset" class="riki">
+            </div>
+            <div>
+                <input type="submit" class="riki">
+            </div>
+        </form>
+        <br>
+        <div>
+            <label for="subscribe" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: white;"><b>Subscribe!</b></label>
+            <input type="checkbox" name="subscribe" id="subscribe">
+        </div>
+        <button onclick="doSomething()" style="background-color: white; color: palevioletred; border: 2px white solid;"><b>Welcome</b></button>
+        <p id="test"> Hello! </p>
+
+        <script>
+            function doSomething(){
+                document.getElementById("test").innerHTML = "Goodbye!"
+            }
+        </script>
+    </body>
+</html>

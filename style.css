@@ -1,0 +1,96 @@
+#heading {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+h1{
+    transform: skewY(-5deg);
+    text-shadow: 7px 4px 2px palevioletred, 10px 8px 6px rgb(172,83,112);
+    animation: mySlide;
+    animation: myOpacity;
+    animation: myColorChange;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+
+    /*animation: 3s linear 0s infinite running mySlike;*/
+}
+h1:active {
+    /*animation: 3s linear 0s infinite running mySlike;*/
+}
+.paragraph {
+    color: palevioletred;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes mySlide{
+    from{margin-left: 100%;}
+    to{margin-left: 0%;}
+}
+@keyframes myOpacity{
+    50%{opacity: 0;}
+}
+@keyframes myColorChange{
+    0%{background-color: black;}
+    20%{background-color: white;}
+    40%{background-color: pink;}
+}
+#slika{
+    border: 5px white solid;
+    border-radius: 10px;
+    float: left;
+}
+a {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button:active{
+    background-color: palevioletred;
+    color: white;
+    border: 2px white solid;
+    box-shadow: 5px 5px 5px rgb(172, 83, 112);
+}
+li:nth-child(even){
+    background-color: palevioletred;
+    padding: 5px;
+    margin-right: 450px;
+}
+li:nth-child(odd){
+    background-color: rgb(172, 83, 112);
+    padding: 5px;
+    margin-right: 450px;
+}
+a:hover {
+    color: palevioletred;
+}
+li {
+    color: white;
+    list-style-type: none;
+}
+form {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.riki {
+    background-color: white;
+     color: palevioletred;
+     border: 2px palevioletred solid;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#radio {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#test {
+    color: white;
+    background-color: palevioletred;
+    margin-right: 650px;
+}
+.riki:hover{
+    background-color: palevioletred;
+    color: white;
+    border: 2px white solid;
+    box-shadow: 5px 5px 5px rgb(172, 83, 112);
+}
